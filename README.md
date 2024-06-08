@@ -274,3 +274,64 @@ begin
   WriteLn('Произведение элементов массива p = ', p:0:2);
 
 end.
+
+
+![изображение](https://github.com/Luxurys-Lukuchi/Paskal/assets/146846830/ad7f3603-e716-4f0e-af4e-9f63056156f6)
+
+program ArrayElementsCount;
+
+var
+
+  n, i, x: Integer;
+  
+  a: array[1..12] of Real;
+
+begin
+  
+  // Размерность массива
+  
+  n := 12;
+  
+  // Ввод элементов массива
+  
+  WriteLn('Введите элементы массива:');
+  
+  for i := 1 to n do
+  
+  begin
+  
+    Write('a[', i, '] = ');
+    
+    ReadLn(a[i]);
+  
+  end;
+
+  // Вывод элементов массива на экран
+  
+  WriteLn('Массив a:');
+  
+  for i := 1 to n do
+   
+    Write(a[i]:0:2, ' ');
+  
+  WriteLn;
+
+  // Подсчет количества элементов, удовлетворяющих условию
+  
+  x := 0;
+  
+  for i := 1 to n do
+  
+  begin
+  
+    if a[i] > 2 then
+    
+      Inc(x);
+  
+  end;
+
+  // Вывод количества элементов, удовлетворяющих условию
+  
+  WriteLn('Количество элементов массива, больше 2: ', x);
+
+end.
