@@ -97,3 +97,41 @@ begin
   WriteLn('Вычисленное значение y = ', y:0:4);
 
 end.
+
+# Pacsal 3
+![изображение](https://github.com/Luxurys-Lukuchi/Paskal/assets/146846830/8407578e-7e0a-4d38-bd42-45a2ff377b6d)
+
+program CalculateExpressions;
+
+var
+
+  a, b: Real;
+  
+  i, k: Integer;
+
+begin
+  
+  a := 0.0;
+  
+  b := 1.0;
+
+  // Вычисление значения a
+  
+  for i := 1 to 7 do
+  
+    a := a + (i * i / 5);
+
+  // Вычисление значения b
+  
+  for k := 1 to 5 do
+  
+    b := b * (1 / k);
+
+  // Вывод результатов на экран
+  
+  WriteLn('Значение a = ', a:0:4);
+  
+  WriteLn('Значение b = ', b:0:4);
+
+end.
+
