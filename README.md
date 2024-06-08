@@ -202,3 +202,75 @@ begin
   until x > 25.0;
 
 end.
+
+![изображение](https://github.com/Luxurys-Lukuchi/Paskal/assets/146846830/ab4f22be-6e4c-4221-abce-13c1dea08311)
+
+program ArrayOperations;
+
+var
+  
+  n, i: Integer;
+  
+  s, p: Real;
+  
+  a: array of Real;
+
+begin
+  
+  // Ввод размерности массива
+  
+  Write('Введите размерность массива n: ');
+  
+  ReadLn(n);
+
+  // Инициализация массива
+  
+  SetLength(a, n);
+
+  // Ввод элементов массива
+  
+  WriteLn('Введите элементы массива:');
+  
+  for i := 0 to n - 1 do
+  
+  begin
+  
+    Write('a[', i + 1, '] = ');
+    
+    ReadLn(a[i]);
+  
+  end;
+
+  // Вывод элементов массива на экран
+  
+  WriteLn('Массив a:');
+  
+  for i := 0 to n - 1 do
+  
+    Write(a[i]:0:2, ' ');
+  
+  WriteLn;
+
+  // Вычисление суммы и произведения элементов массива
+  
+  s := 0.0;
+  
+  p := 1.0;
+  
+  for i := 0 to n - 1 do
+  
+  begin
+  
+    s := s + a[i];
+    
+    p := p * a[i];
+  
+  end;
+
+  // Вывод суммы и произведения на экран
+
+  WriteLn('Сумма элементов массива s = ', s:0:2);
+  
+  WriteLn('Произведение элементов массива p = ', p:0:2);
+
+end.
