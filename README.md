@@ -50,3 +50,50 @@ begin
   WriteLn('Z = ', Z:0:4);
 
 end.
+
+
+# Paskal 2
+![изображение](https://github.com/Luxurys-Lukuchi/Paskal/assets/146846830/d81c78f7-22c4-451a-af95-50ec59a6a2d6)
+
+
+program ComputeFunction;
+
+uses
+
+  Math;
+
+var
+  
+  x, a, y: Real;
+
+begin
+  
+  // Запросить у пользователя ввод значений для x и a
+  
+  Write('Введите значение для x: ');
+  
+  ReadLn(x);
+  
+  Write('Введите значение для a: ');
+  
+  ReadLn(a);
+
+  // Вычислить значение y в зависимости от условий
+  
+  if (x < 2) and (a > 3) then
+  
+    y := 9.38 * Sin((Power(x, 3) - 7 * a) / Power(a, 3))
+  
+  else if (x < 2) and (a <= 3) then
+  
+    y := Ln(Abs(Power(a, 3))) + Cos(x)
+  
+  else if (x >= 2) then
+  
+    y := Tan(Sin(x));
+
+  // Вывести результат на экран
+  
+  WriteLn('Вычисленное значение y = ', y:0:4);
+
+end.
