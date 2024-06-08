@@ -135,3 +135,70 @@ begin
 
 end.
 
+![изображение](https://github.com/Luxurys-Lukuchi/Paskal/assets/146846830/8bf0b740-3d8a-4408-8735-4d4ed9fd7e45)
+
+program TableUsingWhile;
+
+var
+  
+  x, y: Real;
+  
+  h: Real;
+
+begin
+  
+  h := 2.0;
+  
+  x := 5.0;
+
+  WriteLn(' x    |    y');
+  
+  WriteLn('--------------');
+  
+  
+  while x <= 25.0 do
+  
+  begin
+  
+    y := Sqrt(5 * x);
+    
+  WriteLn(x:4:1, ' | ', y:6:4);
+  
+    x := x + h;
+  
+  end;
+
+end.
+
+-------------------------------
+
+program TableUsingRepeat;
+
+var
+  
+  x, y: Real;
+  
+  h: Real;
+
+begin
+  
+  h := 2.0;
+  
+  x := 5.0;
+
+  
+  WriteLn(' x    |    y');
+  
+  WriteLn('--------------');
+  
+  repeat
+  
+    y := Sqrt(5 * x);
+    
+    WriteLn(x:4:1, ' | ', y:6:4);
+    
+    x := x + h;
+  
+  until x > 25.0;
+
+end.
